@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Portfolio – Monteur vidéo</title>
+<link rel="stylesheet" href="style.css"></head><body><div id="prog"></div><div id="cd"></div><div id="cr"></div>
+<nav><b class="g" id="n1"></b><div><a href="#videos">Vidéos</a><a href="#apropos">À propos</a><a href="#tarifs">Tarifs</a><a href="#contact">Contact</a></div></nav>
+<header class="hero"><div class="blob b1"></div><div class="blob b2"></div><div>
+<h1 class="g" id="n2"></h1><p>Monteur vidéo : YouTube, shorts, clips, sport… Je donne du rythme et de l’énergie à tes images.</p>
+<a class="btn" href="#videos">Voir mes vidéos</a> <a class="btn s" href="#contact">Me contacter</a></div></header>
+<section id="videos" class="rv"><h2>Mes <span class="g">vidéos</span></h2><div class="chips" id="ch"></div><div class="grid" id="vg"><p class="mu" id="vmsg">Chargement…</p></div></section>
+<section id="apropos" class="rv"><h2>À <span class="g">propos</span></h2><div class="card"><p>Salut, moi c’est <b id="n3"></b>. Je monte toutes sortes de vidéos : contenus YouTube, formats courts, clips et sport. Mon but : un montage propre, dynamique, livré dans les temps.</p></div></section>
+<section id="tarifs" class="rv"><h2>Mes <span class="g">tarifs</span></h2><div class="grid">
+<div class="card"><h3>Short / Reel</h3><div class="price g">10 €</div><p class="mu">Format court, montage rapide et punchy.</p></div>
+<div class="card"><h3>Vidéo classique</h3><div class="price g">15 €</div><p class="mu">Montage complet avec rythme, sons et textes.</p></div>
+<div class="card"><h3>Vidéo longue</h3><div class="price g">20 €</div><p class="mu">Format long ou montage plus travaillé.</p></div></div>
+<p class="mu">Entre 10 € et 20 € la vidéo selon la durée et la complexité.</p></section>
+<section id="contact" class="rv"><h2><span class="g">Contact</span></h2><div class="grid">
+<div class="card"><h3>Devis rapide</h3><select id="qt"><option value="10">Short / Reel – 10 €</option><option value="15">Vidéo classique – 15 €</option><option value="20">Vidéo longue – 20 €</option></select><input id="qn" type="number" min="1" value="1" aria-label="Nombre de vidéos"><p class="price g" id="qp">10 €</p><a class="btn" id="mail">Demander ce devis par Gmail</a><div class="soc" id="soc"></div></div>
+<div class="card"><h3>Envoie ta vidéo</h3><div id="fm"><input id="fn" placeholder="Ton nom"><input id="ft" placeholder="Titre de la vidéo"><textarea id="fd" rows="2" placeholder="Message (optionnel)"></textarea>
+<input id="ff" type="file" accept="video/*"><label class="ck"><input type="checkbox" id="fp"> J’accepte que ma vidéo soit publique sur le site</label>
+<button class="btn" id="fs">Envoyer</button> <span class="mu" id="fx"></span></div></div></div></section>
+<section id="adm"><h2><span class="g">Gestion</span></h2><div class="card" id="lg"><h3>Connexion</h3><input id="le" type="email" placeholder="Email" autocomplete="username"><input id="lp" type="password" placeholder="Mot de passe" autocomplete="current-password"><button class="btn" id="lb">Se connecter</button> <span class="mu" id="lx"></span></div><div id="mg" style="display:none"><p><button class="btn sm s" id="lo">Se déconnecter</button></p><div class="card"><h3>Ajouter une vidéo</h3>
+<input id="at" placeholder="Titre"><input id="au" placeholder="Lien YouTube (ou choisis un fichier)"><select id="ac"><option>Shorts</option><option>YouTube</option><option>Clips</option><option>Sport</option><option>Autre</option></select><input id="af" type="file" accept="video/*"><button class="btn" id="as">Ajouter</button> <span class="mu" id="ax"></span></div>
+<div class="card" style="margin-top:20px"><h3>Mes vidéos</h3><div id="al"></div></div>
+<div class="card" style="margin-top:20px"><h3>Vidéos envoyées par les clients</h3><div id="sl"></div></div></div></section>
+<footer><span id="cp" style="user-select:none">©</span> <span id="n4"></span> – Portfolio</footer>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js"></script>
+<script src="script.js"></script></body></html>
